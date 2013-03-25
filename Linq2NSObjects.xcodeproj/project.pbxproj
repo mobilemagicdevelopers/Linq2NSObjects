@@ -25,6 +25,7 @@
 		E198A9F517000EE400721DC3 /* SkipIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9F417000EE400721DC3 /* SkipIterator.m */; };
 		E198A9F817000F4900721DC3 /* CountIteratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9F717000F4900721DC3 /* CountIteratorTests.m */; };
 		E198A9FB170016EC00721DC3 /* TakeIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9FA170016EC00721DC3 /* TakeIterator.m */; };
+		E198A9FE1700BF4700721DC3 /* NSEnumeratorCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9FD1700BF4700721DC3 /* NSEnumeratorCategoryTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		E198A9F717000F4900721DC3 /* CountIteratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountIteratorTests.m; sourceTree = "<group>"; };
 		E198A9F9170016EC00721DC3 /* TakeIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeIterator.h; sourceTree = "<group>"; };
 		E198A9FA170016EC00721DC3 /* TakeIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeIterator.m; sourceTree = "<group>"; };
+		E198A9FC1700BF4700721DC3 /* NSEnumeratorCategoryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSEnumeratorCategoryTests.h; sourceTree = "<group>"; };
+		E198A9FD1700BF4700721DC3 /* NSEnumeratorCategoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSEnumeratorCategoryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 				E198A9EB170003DC00721DC3 /* PredicateIteratorTests.m */,
 				E198A9F617000F4900721DC3 /* CountIteratorTests.h */,
 				E198A9F717000F4900721DC3 /* CountIteratorTests.m */,
+				E198A9FC1700BF4700721DC3 /* NSEnumeratorCategoryTests.h */,
+				E198A9FD1700BF4700721DC3 /* NSEnumeratorCategoryTests.m */,
 			);
 			path = Linq2NSObjectsTests;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				E198A9E016FFFC4000721DC3 /* RangeIteratorTests.m in Sources */,
 				E198A9EC170003DC00721DC3 /* PredicateIteratorTests.m in Sources */,
 				E198A9F817000F4900721DC3 /* CountIteratorTests.m in Sources */,
+				E198A9FE1700BF4700721DC3 /* NSEnumeratorCategoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +478,7 @@
 				E198A9C316FFE52E00721DC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E198A9C416FFE52E00721DC3 /* Build configuration list for PBXNativeTarget "Linq2NSObjectsTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +487,7 @@
 				E198A9C616FFE52E00721DC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

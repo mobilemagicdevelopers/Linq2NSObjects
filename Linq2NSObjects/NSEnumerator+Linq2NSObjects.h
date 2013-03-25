@@ -11,10 +11,20 @@
 #import "Linq2NSObjectsTypes.h"
 
 @interface NSEnumerator (Linq2NSObjects)
+#pragma mark Iterators
 -(Iterator *)where:(Predicate)predicate;
 
 -(Iterator *)skip:(int)count;
 -(Iterator *)take:(int)count;
 
+#pragma mark Selections
+-(id)first;
 -(id)first:(Predicate)predicate;
+
+-(BOOL)any;
+-(BOOL)any:(Predicate)predicate;
+
+-(BOOL)contains:(id)item;
+
+-(id)aggregateWithSeed:(id)seed andAccumulator:(Accumulator)accumulator;
 @end

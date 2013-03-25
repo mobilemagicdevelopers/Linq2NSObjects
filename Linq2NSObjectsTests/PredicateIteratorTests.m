@@ -16,7 +16,7 @@
 {
     int start = 2, count = 17;
     id rangeIterator = [RangeIterator withStart:start andCount:count];
-    Predicate isEven = ^BOOL(NSNumber *element) { return element.integerValue % 2 == 0; };
+    Predicate isEven = ^BOOL(NSNumber *item) { return item.integerValue % 2 == 0; };
 
     int actualEvenCount = 0;
     for (NSNumber *number in [rangeIterator where:isEven])

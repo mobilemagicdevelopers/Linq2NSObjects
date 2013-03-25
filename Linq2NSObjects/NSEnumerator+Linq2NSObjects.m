@@ -28,11 +28,45 @@
     return [[TakeIterator alloc] initWithSource:self andCount:count];
 }
 
+-(id)first
+{
+    return [self nextObject];
+}
+
 -(id)first:(Predicate)predicate
 {
     id result = [self nextObject];;
     while (result && !predicate(result))
         result = [self nextObject];
+    
+    return result;
+}
+
+-(BOOL)any
+{
+    return [self first] != nil;
+}
+
+-(BOOL)any:(Predicate)predicate
+{
+    return [self first:predicate] != nil;
+}
+
+-(BOOL)contains:(id)item
+{
+    id element;
+    while (element = [self nextObject])
+        if ([element isEqual:item])
+            return true;
+    
+    return false;
+}
+
+-(id)aggregateWithSeed:(id)seed andAccumulator:(Accumulator)accumulator
+{
+    id result = seed;
+    for(id item in self)
+        result = accumulator(result, item);
     
     return result;
 }

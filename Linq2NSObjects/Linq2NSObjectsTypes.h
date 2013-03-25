@@ -8,4 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef BOOL (^Predicate)(id element);
+typedef BOOL (^Predicate)(id item);
+typedef id (^Accumulator)(id aggregate, id item);
+typedef id (^Selector)(id item);
