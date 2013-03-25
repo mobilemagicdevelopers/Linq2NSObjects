@@ -55,4 +55,23 @@
     STAssertEquals(actualValue, expectedValue, @"Aggregate category method failed.");
 }
 
+-(void)testToDictionary
+{
+    int start = 2, count = 17;
+    id rangeIterator = [RangeIterator withStart:start andCount:count];
+    
+    Selector keySelector = ^NSNumber *(NSNumber *item){ return item; };
+    Selector valueSelector = ^NSString *(NSNumber *item){ return [NSString stringWithFormat:@"%i", item.integerValue]; };
+    
+    NSDictionary *dictionary = [rangeIterator toDictionaryWithKeySelector:keySelector andValueSelector:valueSelector];
+    for (NSNumber *number in dictionary.keyEnumerator)
+    {
+        NSString *actualValue = [dictionary objectForKey:number];
+        NSString *expectedValue = valueSelector(number);
+        STAssertTrue([actualValue isEqualToString:expectedValue], @"ToDictionary Value not equal.");
+    }
+    
+    STAssertEquals(dictionary.count, (uint)count, @"ToDictionary has unexpected length.");
+}
+
 @end

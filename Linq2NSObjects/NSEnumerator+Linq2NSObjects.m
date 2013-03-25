@@ -83,10 +83,20 @@
 -(id)aggregateWithSeed:(id)seed andAccumulator:(Accumulator)accumulator
 {
     id result = seed;
-    for(id item in self)
+    for (id item in self)
         result = accumulator(result, item);
     
     return result;
+}
+
+-(NSDictionary *)toDictionaryWithKeySelector:(Selector)keySelector andValueSelector:(Selector)valueSelector
+{
+    NSMutableDictionary *result = [NSMutableDictionary dictionary];
+    
+    for (id item in self)
+        [result setObject:valueSelector(item) forKey:keySelector(item)];
+    
+    return result.copy;
 }
 
 @end

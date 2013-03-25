@@ -31,4 +31,6 @@
 -(BOOL)contains:(id)item;
 
 -(id)aggregateWithSeed:(id)seed andAccumulator:(Accumulator)accumulator;
+
+-(NSDictionary *)toDictionaryWithKeySelector:(Selector)keySelector andValueSelector:(Selector)valueSelector;
 @end
