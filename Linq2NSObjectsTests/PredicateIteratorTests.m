@@ -33,4 +33,19 @@
     STAssertEquals(actualEvenCount, expectedEvenCount, @"WhereIterator returned unexpected number of items.");
 }
 
+-(void)testSkipWhileTakeWhileIterator
+{
+    int start = 2, count = 17, skipLessThan = 4, takeLessThanEqualTo = 6;
+    id rangeIterator = [RangeIterator withStart:start andCount:count];
+
+    Predicate skip = ^BOOL(NSNumber *item) { return item.integerValue < skipLessThan; };
+    Predicate take = ^BOOL(NSNumber *item) { return item.integerValue <= takeLessThanEqualTo; };
+    
+    int actualCount = 0;
+    for (NSNumber *number in [[rangeIterator skipWhile:skip] takeWhile:take])
+        STAssertEquals(number.integerValue, skipLessThan + actualCount++, @"SkipWhileIterator failed.");
+    
+    STAssertEquals(actualCount, takeLessThanEqualTo - skipLessThan + 1, @"TakeWhileIterator failed.");
+}
+
 @end

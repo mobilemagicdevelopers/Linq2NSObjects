@@ -14,18 +14,23 @@
 		E198A9B216FFE52D00721DC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E198A99F16FFE52D00721DC3 /* Foundation.framework */; };
 		E198A9B516FFE52D00721DC3 /* libLinq2NSObjects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E198A99C16FFE52D00721DC3 /* libLinq2NSObjects.a */; };
 		E198A9BB16FFE52E00721DC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E198A9B916FFE52E00721DC3 /* InfoPlist.strings */; };
-		E198A9D716FFE99100721DC3 /* Iterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9D616FFE99100721DC3 /* Iterator.m */; };
 		E198A9DA16FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9D916FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.m */; };
 		E198A9DD16FFFA0400721DC3 /* RangeIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9DC16FFFA0400721DC3 /* RangeIterator.m */; };
 		E198A9E016FFFC4000721DC3 /* RangeIteratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9DF16FFFC4000721DC3 /* RangeIteratorTests.m */; };
 		E198A9E31700006F00721DC3 /* WhereIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9E21700006F00721DC3 /* WhereIterator.m */; };
-		E198A9E9170002A500721DC3 /* PredicateIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9E8170002A500721DC3 /* PredicateIterator.m */; };
 		E198A9EC170003DC00721DC3 /* PredicateIteratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9EB170003DC00721DC3 /* PredicateIteratorTests.m */; };
-		E198A9F217000E7900721DC3 /* CountIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9F117000E7900721DC3 /* CountIterator.m */; };
 		E198A9F517000EE400721DC3 /* SkipIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9F417000EE400721DC3 /* SkipIterator.m */; };
 		E198A9F817000F4900721DC3 /* CountIteratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9F717000F4900721DC3 /* CountIteratorTests.m */; };
 		E198A9FB170016EC00721DC3 /* TakeIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9FA170016EC00721DC3 /* TakeIterator.m */; };
 		E198A9FE1700BF4700721DC3 /* NSEnumeratorCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9FD1700BF4700721DC3 /* NSEnumeratorCategoryTests.m */; };
+		E198AA0B1700D05700721DC3 /* CountIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA041700D05700721DC3 /* CountIterator.m */; };
+		E198AA0C1700D05700721DC3 /* Iterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA061700D05700721DC3 /* Iterator.m */; };
+		E198AA0D1700D05700721DC3 /* PredicateIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA081700D05700721DC3 /* PredicateIterator.m */; };
+		E198AA0E1700D05700721DC3 /* SelectorIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA0A1700D05700721DC3 /* SelectorIterator.m */; };
+		E198AA111700D0CD00721DC3 /* SelectIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA101700D0CD00721DC3 /* SelectIterator.m */; };
+		E198AA141700D19F00721DC3 /* SelectorIteratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA131700D19F00721DC3 /* SelectorIteratorTests.m */; };
+		E198AA171700D98F00721DC3 /* SkipWhileIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA161700D98F00721DC3 /* SkipWhileIterator.m */; };
+		E198AA1A1700D9EC00721DC3 /* TakeWhileIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA191700D9EC00721DC3 /* TakeWhileIterator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +66,6 @@
 		E198A9B016FFE52D00721DC3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E198A9B816FFE52E00721DC3 /* Linq2NSObjectsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Linq2NSObjectsTests-Info.plist"; sourceTree = "<group>"; };
 		E198A9BA16FFE52E00721DC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E198A9D516FFE99100721DC3 /* Iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Iterator.h; sourceTree = "<group>"; };
-		E198A9D616FFE99100721DC3 /* Iterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Iterator.m; sourceTree = "<group>"; };
 		E198A9D816FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+Linq2NSObjects.h"; sourceTree = "<group>"; };
 		E198A9D916FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+Linq2NSObjects.m"; sourceTree = "<group>"; };
 		E198A9DB16FFFA0400721DC3 /* RangeIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeIterator.h; sourceTree = "<group>"; };
@@ -72,12 +75,8 @@
 		E198A9E11700006F00721DC3 /* WhereIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereIterator.h; sourceTree = "<group>"; };
 		E198A9E21700006F00721DC3 /* WhereIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereIterator.m; sourceTree = "<group>"; };
 		E198A9E41700020000721DC3 /* Linq2NSObjectsTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Linq2NSObjectsTypes.h; sourceTree = "<group>"; };
-		E198A9E7170002A500721DC3 /* PredicateIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredicateIterator.h; sourceTree = "<group>"; };
-		E198A9E8170002A500721DC3 /* PredicateIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicateIterator.m; sourceTree = "<group>"; };
 		E198A9EA170003DC00721DC3 /* PredicateIteratorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredicateIteratorTests.h; sourceTree = "<group>"; };
 		E198A9EB170003DC00721DC3 /* PredicateIteratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicateIteratorTests.m; sourceTree = "<group>"; };
-		E198A9F017000E7900721DC3 /* CountIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountIterator.h; sourceTree = "<group>"; };
-		E198A9F117000E7900721DC3 /* CountIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountIterator.m; sourceTree = "<group>"; };
 		E198A9F317000EE400721DC3 /* SkipIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkipIterator.h; sourceTree = "<group>"; };
 		E198A9F417000EE400721DC3 /* SkipIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkipIterator.m; sourceTree = "<group>"; };
 		E198A9F617000F4900721DC3 /* CountIteratorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountIteratorTests.h; sourceTree = "<group>"; };
@@ -86,6 +85,22 @@
 		E198A9FA170016EC00721DC3 /* TakeIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeIterator.m; sourceTree = "<group>"; };
 		E198A9FC1700BF4700721DC3 /* NSEnumeratorCategoryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSEnumeratorCategoryTests.h; sourceTree = "<group>"; };
 		E198A9FD1700BF4700721DC3 /* NSEnumeratorCategoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSEnumeratorCategoryTests.m; sourceTree = "<group>"; };
+		E198AA031700D05700721DC3 /* CountIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountIterator.h; path = "Base Iterators/CountIterator.h"; sourceTree = "<group>"; };
+		E198AA041700D05700721DC3 /* CountIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountIterator.m; path = "Base Iterators/CountIterator.m"; sourceTree = "<group>"; };
+		E198AA051700D05700721DC3 /* Iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Iterator.h; path = "Base Iterators/Iterator.h"; sourceTree = "<group>"; };
+		E198AA061700D05700721DC3 /* Iterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Iterator.m; path = "Base Iterators/Iterator.m"; sourceTree = "<group>"; };
+		E198AA071700D05700721DC3 /* PredicateIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PredicateIterator.h; path = "Base Iterators/PredicateIterator.h"; sourceTree = "<group>"; };
+		E198AA081700D05700721DC3 /* PredicateIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PredicateIterator.m; path = "Base Iterators/PredicateIterator.m"; sourceTree = "<group>"; };
+		E198AA091700D05700721DC3 /* SelectorIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectorIterator.h; path = "Base Iterators/SelectorIterator.h"; sourceTree = "<group>"; };
+		E198AA0A1700D05700721DC3 /* SelectorIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectorIterator.m; path = "Base Iterators/SelectorIterator.m"; sourceTree = "<group>"; };
+		E198AA0F1700D0CD00721DC3 /* SelectIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectIterator.h; sourceTree = "<group>"; };
+		E198AA101700D0CD00721DC3 /* SelectIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectIterator.m; sourceTree = "<group>"; };
+		E198AA121700D19F00721DC3 /* SelectorIteratorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectorIteratorTests.h; sourceTree = "<group>"; };
+		E198AA131700D19F00721DC3 /* SelectorIteratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectorIteratorTests.m; sourceTree = "<group>"; };
+		E198AA151700D98F00721DC3 /* SkipWhileIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkipWhileIterator.h; sourceTree = "<group>"; };
+		E198AA161700D98F00721DC3 /* SkipWhileIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkipWhileIterator.m; sourceTree = "<group>"; };
+		E198AA181700D9EC00721DC3 /* TakeWhileIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeWhileIterator.h; sourceTree = "<group>"; };
+		E198AA191700D9EC00721DC3 /* TakeWhileIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeWhileIterator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +190,8 @@
 				E198A9F717000F4900721DC3 /* CountIteratorTests.m */,
 				E198A9FC1700BF4700721DC3 /* NSEnumeratorCategoryTests.h */,
 				E198A9FD1700BF4700721DC3 /* NSEnumeratorCategoryTests.m */,
+				E198AA121700D19F00721DC3 /* SelectorIteratorTests.h */,
+				E198AA131700D19F00721DC3 /* SelectorIteratorTests.m */,
 			);
 			path = Linq2NSObjectsTests;
 			sourceTree = "<group>";
@@ -191,20 +208,36 @@
 		E198A9CE16FFE95300721DC3 /* Iterators */ = {
 			isa = PBXGroup;
 			children = (
-				E198A9D516FFE99100721DC3 /* Iterator.h */,
-				E198A9D616FFE99100721DC3 /* Iterator.m */,
+				E198A9FF1700CFA900721DC3 /* Base Iterators */,
 				E198A9E11700006F00721DC3 /* WhereIterator.h */,
 				E198A9E21700006F00721DC3 /* WhereIterator.m */,
-				E198A9E7170002A500721DC3 /* PredicateIterator.h */,
-				E198A9E8170002A500721DC3 /* PredicateIterator.m */,
-				E198A9F017000E7900721DC3 /* CountIterator.h */,
-				E198A9F117000E7900721DC3 /* CountIterator.m */,
 				E198A9F317000EE400721DC3 /* SkipIterator.h */,
 				E198A9F417000EE400721DC3 /* SkipIterator.m */,
 				E198A9F9170016EC00721DC3 /* TakeIterator.h */,
 				E198A9FA170016EC00721DC3 /* TakeIterator.m */,
+				E198AA0F1700D0CD00721DC3 /* SelectIterator.h */,
+				E198AA101700D0CD00721DC3 /* SelectIterator.m */,
+				E198AA151700D98F00721DC3 /* SkipWhileIterator.h */,
+				E198AA161700D98F00721DC3 /* SkipWhileIterator.m */,
+				E198AA181700D9EC00721DC3 /* TakeWhileIterator.h */,
+				E198AA191700D9EC00721DC3 /* TakeWhileIterator.m */,
 			);
 			path = Iterators;
+			sourceTree = "<group>";
+		};
+		E198A9FF1700CFA900721DC3 /* Base Iterators */ = {
+			isa = PBXGroup;
+			children = (
+				E198AA031700D05700721DC3 /* CountIterator.h */,
+				E198AA041700D05700721DC3 /* CountIterator.m */,
+				E198AA051700D05700721DC3 /* Iterator.h */,
+				E198AA061700D05700721DC3 /* Iterator.m */,
+				E198AA071700D05700721DC3 /* PredicateIterator.h */,
+				E198AA081700D05700721DC3 /* PredicateIterator.m */,
+				E198AA091700D05700721DC3 /* SelectorIterator.h */,
+				E198AA0A1700D05700721DC3 /* SelectorIterator.m */,
+			);
+			name = "Base Iterators";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,13 +338,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E198A9D716FFE99100721DC3 /* Iterator.m in Sources */,
 				E198A9DA16FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.m in Sources */,
 				E198A9E31700006F00721DC3 /* WhereIterator.m in Sources */,
-				E198A9E9170002A500721DC3 /* PredicateIterator.m in Sources */,
-				E198A9F217000E7900721DC3 /* CountIterator.m in Sources */,
 				E198A9F517000EE400721DC3 /* SkipIterator.m in Sources */,
 				E198A9FB170016EC00721DC3 /* TakeIterator.m in Sources */,
+				E198AA0B1700D05700721DC3 /* CountIterator.m in Sources */,
+				E198AA0C1700D05700721DC3 /* Iterator.m in Sources */,
+				E198AA0D1700D05700721DC3 /* PredicateIterator.m in Sources */,
+				E198AA0E1700D05700721DC3 /* SelectorIterator.m in Sources */,
+				E198AA111700D0CD00721DC3 /* SelectIterator.m in Sources */,
+				E198AA171700D98F00721DC3 /* SkipWhileIterator.m in Sources */,
+				E198AA1A1700D9EC00721DC3 /* TakeWhileIterator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +361,7 @@
 				E198A9EC170003DC00721DC3 /* PredicateIteratorTests.m in Sources */,
 				E198A9F817000F4900721DC3 /* CountIteratorTests.m in Sources */,
 				E198A9FE1700BF4700721DC3 /* NSEnumeratorCategoryTests.m in Sources */,
+				E198AA141700D19F00721DC3 /* SelectorIteratorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,12 +10,25 @@
 #import "WhereIterator.h"
 #import "SkipIterator.h"
 #import "TakeIterator.h"
+#import "SelectIterator.h"
+#import "SkipWhileIterator.h"
+#import "TakeWhileIterator.h"
 
 @implementation NSEnumerator (Linq2NSObjects)
 
 -(Iterator *)where:(Predicate)predicate
 {
     return [[WhereIterator alloc] initWithSource:self andPredicate:predicate];
+}
+
+-(Iterator *)skipWhile:(Predicate)predicate
+{
+    return [[SkipWhileIterator alloc] initWithSource:self andPredicate:predicate];
+}
+
+-(Iterator *)takeWhile:(Predicate)predicate
+{
+    return [[TakeWhileIterator alloc] initWithSource:self andPredicate:predicate];
 }
 
 -(Iterator *)skip:(int)count
@@ -26,6 +39,11 @@
 -(Iterator *)take:(int)count
 {
     return [[TakeIterator alloc] initWithSource:self andCount:count];
+}
+
+-(Iterator *)select:(Selector)selector
+{
+    return [[SelectIterator alloc] initWithSource:self andSelector:selector];
 }
 
 -(id)first

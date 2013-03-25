@@ -13,9 +13,13 @@
 @interface NSEnumerator (Linq2NSObjects)
 #pragma mark Iterators
 -(Iterator *)where:(Predicate)predicate;
+-(Iterator *)skipWhile:(Predicate)predicate;
+-(Iterator *)takeWhile:(Predicate)predicate;
 
 -(Iterator *)skip:(int)count;
 -(Iterator *)take:(int)count;
+
+-(Iterator *)select:(Selector)selector;
 
 #pragma mark Selections
 -(id)first;
