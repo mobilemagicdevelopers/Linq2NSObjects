@@ -13,7 +13,7 @@
 -(id)nextObject
 {
     id result = [_source nextObject];
-    while (result && _count--)
+    while (result && _count-- > 0)
         result = [_source nextObject];
     
     return result;

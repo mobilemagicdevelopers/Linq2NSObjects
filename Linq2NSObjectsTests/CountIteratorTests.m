@@ -17,9 +17,11 @@
     int start = 2, count = 17, skip = 5;
     id rangeIterator = [RangeIterator withStart:start andCount:count];
 
-    start += skip;
+    int itemsTaken = 0;
     for (NSNumber *number in [rangeIterator skip:skip])
-        STAssertEquals(number.integerValue, start++, @"SkipIterator failed.");
+        STAssertEquals(number.integerValue, start + skip + itemsTaken++, @"SkipIterator failed.");
+    
+    STAssertEquals(itemsTaken, count - skip, @"SkipIterator returned unexpected number of items.");
 }
 
 -(void)testTakeIterator
@@ -28,6 +30,18 @@
     id rangeIterator = [RangeIterator withStart:start andCount:count];
     
     STAssertEquals([rangeIterator take:take].allObjects.count, (uint)take, @"TakeIterator failed.");
+}
+
+-(void)testSkipIteratorThenTakeIterator
+{
+    int start = 2, count = 17, skip = 5, take = 5;
+    id rangeIterator = [RangeIterator withStart:start andCount:count];
+
+    int itemsTaken = 0;
+    for (NSNumber *number in [[rangeIterator skip:skip] take:take])
+        STAssertEquals(number.integerValue, start + skip + itemsTaken++, @"SkipIterator failed.");
+    
+    STAssertEquals(itemsTaken, take, @"TakeIterator failed");
 }
 
 @end
