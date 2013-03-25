@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E198A9A016FFE52D00721DC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E198A99F16FFE52D00721DC3 /* Foundation.framework */; };
+		E198A9A516FFE52D00721DC3 /* Linq2NSObjects.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E198A9A416FFE52D00721DC3 /* Linq2NSObjects.h */; };
+		E198A9AF16FFE52D00721DC3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E198A9AE16FFE52D00721DC3 /* SenTestingKit.framework */; };
+		E198A9B116FFE52D00721DC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E198A9B016FFE52D00721DC3 /* UIKit.framework */; };
+		E198A9B216FFE52D00721DC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E198A99F16FFE52D00721DC3 /* Foundation.framework */; };
+		E198A9B516FFE52D00721DC3 /* libLinq2NSObjects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E198A99C16FFE52D00721DC3 /* libLinq2NSObjects.a */; };
+		E198A9BB16FFE52E00721DC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E198A9B916FFE52E00721DC3 /* InfoPlist.strings */; };
+		E198A9D716FFE99100721DC3 /* Iterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9D616FFE99100721DC3 /* Iterator.m */; };
+		E198A9DA16FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9D916FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.m */; };
+		E198A9DD16FFFA0400721DC3 /* RangeIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9DC16FFFA0400721DC3 /* RangeIterator.m */; };
+		E198A9E016FFFC4000721DC3 /* RangeIteratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9DF16FFFC4000721DC3 /* RangeIteratorTests.m */; };
+		E198A9E31700006F00721DC3 /* WhereIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9E21700006F00721DC3 /* WhereIterator.m */; };
+		E198A9E9170002A500721DC3 /* PredicateIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9E8170002A500721DC3 /* PredicateIterator.m */; };
+		E198A9EC170003DC00721DC3 /* PredicateIteratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9EB170003DC00721DC3 /* PredicateIteratorTests.m */; };
+		E198A9F217000E7900721DC3 /* CountIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9F117000E7900721DC3 /* CountIterator.m */; };
+		E198A9F517000EE400721DC3 /* SkipIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9F417000EE400721DC3 /* SkipIterator.m */; };
+		E198A9F817000F4900721DC3 /* CountIteratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9F717000F4900721DC3 /* CountIteratorTests.m */; };
+		E198A9FB170016EC00721DC3 /* TakeIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198A9FA170016EC00721DC3 /* TakeIterator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E198A9B316FFE52D00721DC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E198A99416FFE52D00721DC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E198A99B16FFE52D00721DC3;
+			remoteInfo = Linq2NSObjects;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E198A99A16FFE52D00721DC3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				E198A9A516FFE52D00721DC3 /* Linq2NSObjects.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E198A99C16FFE52D00721DC3 /* libLinq2NSObjects.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLinq2NSObjects.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E198A99F16FFE52D00721DC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E198A9A316FFE52D00721DC3 /* Linq2NSObjects-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Linq2NSObjects-Prefix.pch"; sourceTree = "<group>"; };
+		E198A9A416FFE52D00721DC3 /* Linq2NSObjects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Linq2NSObjects.h; sourceTree = "<group>"; };
+		E198A9AD16FFE52D00721DC3 /* Linq2NSObjectsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Linq2NSObjectsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E198A9AE16FFE52D00721DC3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E198A9B016FFE52D00721DC3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E198A9B816FFE52E00721DC3 /* Linq2NSObjectsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Linq2NSObjectsTests-Info.plist"; sourceTree = "<group>"; };
+		E198A9BA16FFE52E00721DC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E198A9D516FFE99100721DC3 /* Iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Iterator.h; sourceTree = "<group>"; };
+		E198A9D616FFE99100721DC3 /* Iterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Iterator.m; sourceTree = "<group>"; };
+		E198A9D816FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+Linq2NSObjects.h"; sourceTree = "<group>"; };
+		E198A9D916FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+Linq2NSObjects.m"; sourceTree = "<group>"; };
+		E198A9DB16FFFA0400721DC3 /* RangeIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeIterator.h; sourceTree = "<group>"; };
+		E198A9DC16FFFA0400721DC3 /* RangeIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeIterator.m; sourceTree = "<group>"; };
+		E198A9DE16FFFC4000721DC3 /* RangeIteratorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeIteratorTests.h; sourceTree = "<group>"; };
+		E198A9DF16FFFC4000721DC3 /* RangeIteratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeIteratorTests.m; sourceTree = "<group>"; };
+		E198A9E11700006F00721DC3 /* WhereIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereIterator.h; sourceTree = "<group>"; };
+		E198A9E21700006F00721DC3 /* WhereIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereIterator.m; sourceTree = "<group>"; };
+		E198A9E41700020000721DC3 /* Linq2NSObjectsTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Linq2NSObjectsTypes.h; sourceTree = "<group>"; };
+		E198A9E7170002A500721DC3 /* PredicateIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredicateIterator.h; sourceTree = "<group>"; };
+		E198A9E8170002A500721DC3 /* PredicateIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicateIterator.m; sourceTree = "<group>"; };
+		E198A9EA170003DC00721DC3 /* PredicateIteratorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredicateIteratorTests.h; sourceTree = "<group>"; };
+		E198A9EB170003DC00721DC3 /* PredicateIteratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicateIteratorTests.m; sourceTree = "<group>"; };
+		E198A9F017000E7900721DC3 /* CountIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountIterator.h; sourceTree = "<group>"; };
+		E198A9F117000E7900721DC3 /* CountIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountIterator.m; sourceTree = "<group>"; };
+		E198A9F317000EE400721DC3 /* SkipIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkipIterator.h; sourceTree = "<group>"; };
+		E198A9F417000EE400721DC3 /* SkipIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkipIterator.m; sourceTree = "<group>"; };
+		E198A9F617000F4900721DC3 /* CountIteratorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountIteratorTests.h; sourceTree = "<group>"; };
+		E198A9F717000F4900721DC3 /* CountIteratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountIteratorTests.m; sourceTree = "<group>"; };
+		E198A9F9170016EC00721DC3 /* TakeIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeIterator.h; sourceTree = "<group>"; };
+		E198A9FA170016EC00721DC3 /* TakeIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeIterator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E198A99916FFE52D00721DC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E198A9A016FFE52D00721DC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E198A9A916FFE52D00721DC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E198A9AF16FFE52D00721DC3 /* SenTestingKit.framework in Frameworks */,
+				E198A9B116FFE52D00721DC3 /* UIKit.framework in Frameworks */,
+				E198A9B216FFE52D00721DC3 /* Foundation.framework in Frameworks */,
+				E198A9B516FFE52D00721DC3 /* libLinq2NSObjects.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E198A99316FFE52D00721DC3 = {
+			isa = PBXGroup;
+			children = (
+				E198A9A116FFE52D00721DC3 /* Linq2NSObjects */,
+				E198A9B616FFE52D00721DC3 /* Linq2NSObjectsTests */,
+				E198A99E16FFE52D00721DC3 /* Frameworks */,
+				E198A99D16FFE52D00721DC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E198A99D16FFE52D00721DC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E198A99C16FFE52D00721DC3 /* libLinq2NSObjects.a */,
+				E198A9AD16FFE52D00721DC3 /* Linq2NSObjectsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E198A99E16FFE52D00721DC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E198A99F16FFE52D00721DC3 /* Foundation.framework */,
+				E198A9AE16FFE52D00721DC3 /* SenTestingKit.framework */,
+				E198A9B016FFE52D00721DC3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E198A9A116FFE52D00721DC3 /* Linq2NSObjects */ = {
+			isa = PBXGroup;
+			children = (
+				E198A9CE16FFE95300721DC3 /* Iterators */,
+				E198A9A216FFE52D00721DC3 /* Supporting Files */,
+				E198A9A416FFE52D00721DC3 /* Linq2NSObjects.h */,
+				E198A9D816FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.h */,
+				E198A9D916FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.m */,
+				E198A9E41700020000721DC3 /* Linq2NSObjectsTypes.h */,
+			);
+			path = Linq2NSObjects;
+			sourceTree = "<group>";
+		};
+		E198A9A216FFE52D00721DC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E198A9A316FFE52D00721DC3 /* Linq2NSObjects-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E198A9B616FFE52D00721DC3 /* Linq2NSObjectsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E198A9B716FFE52E00721DC3 /* Supporting Files */,
+				E198A9DB16FFFA0400721DC3 /* RangeIterator.h */,
+				E198A9DC16FFFA0400721DC3 /* RangeIterator.m */,
+				E198A9DE16FFFC4000721DC3 /* RangeIteratorTests.h */,
+				E198A9DF16FFFC4000721DC3 /* RangeIteratorTests.m */,
+				E198A9EA170003DC00721DC3 /* PredicateIteratorTests.h */,
+				E198A9EB170003DC00721DC3 /* PredicateIteratorTests.m */,
+				E198A9F617000F4900721DC3 /* CountIteratorTests.h */,
+				E198A9F717000F4900721DC3 /* CountIteratorTests.m */,
+			);
+			path = Linq2NSObjectsTests;
+			sourceTree = "<group>";
+		};
+		E198A9B716FFE52E00721DC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E198A9B816FFE52E00721DC3 /* Linq2NSObjectsTests-Info.plist */,
+				E198A9B916FFE52E00721DC3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E198A9CE16FFE95300721DC3 /* Iterators */ = {
+			isa = PBXGroup;
+			children = (
+				E198A9D516FFE99100721DC3 /* Iterator.h */,
+				E198A9D616FFE99100721DC3 /* Iterator.m */,
+				E198A9E11700006F00721DC3 /* WhereIterator.h */,
+				E198A9E21700006F00721DC3 /* WhereIterator.m */,
+				E198A9E7170002A500721DC3 /* PredicateIterator.h */,
+				E198A9E8170002A500721DC3 /* PredicateIterator.m */,
+				E198A9F017000E7900721DC3 /* CountIterator.h */,
+				E198A9F117000E7900721DC3 /* CountIterator.m */,
+				E198A9F317000EE400721DC3 /* SkipIterator.h */,
+				E198A9F417000EE400721DC3 /* SkipIterator.m */,
+				E198A9F9170016EC00721DC3 /* TakeIterator.h */,
+				E198A9FA170016EC00721DC3 /* TakeIterator.m */,
+			);
+			path = Iterators;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E198A99B16FFE52D00721DC3 /* Linq2NSObjects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E198A9C116FFE52E00721DC3 /* Build configuration list for PBXNativeTarget "Linq2NSObjects" */;
+			buildPhases = (
+				E198A99816FFE52D00721DC3 /* Sources */,
+				E198A99916FFE52D00721DC3 /* Frameworks */,
+				E198A99A16FFE52D00721DC3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Linq2NSObjects;
+			productName = Linq2NSObjects;
+			productReference = E198A99C16FFE52D00721DC3 /* libLinq2NSObjects.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E198A9AC16FFE52D00721DC3 /* Linq2NSObjectsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E198A9C416FFE52E00721DC3 /* Build configuration list for PBXNativeTarget "Linq2NSObjectsTests" */;
+			buildPhases = (
+				E198A9A816FFE52D00721DC3 /* Sources */,
+				E198A9A916FFE52D00721DC3 /* Frameworks */,
+				E198A9AA16FFE52D00721DC3 /* Resources */,
+				E198A9AB16FFE52D00721DC3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E198A9B416FFE52D00721DC3 /* PBXTargetDependency */,
+			);
+			name = Linq2NSObjectsTests;
+			productName = Linq2NSObjectsTests;
+			productReference = E198A9AD16FFE52D00721DC3 /* Linq2NSObjectsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E198A99416FFE52D00721DC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mobile Magic Developers, LLC";
+			};
+			buildConfigurationList = E198A99716FFE52D00721DC3 /* Build configuration list for PBXProject "Linq2NSObjects" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E198A99316FFE52D00721DC3;
+			productRefGroup = E198A99D16FFE52D00721DC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E198A99B16FFE52D00721DC3 /* Linq2NSObjects */,
+				E198A9AC16FFE52D00721DC3 /* Linq2NSObjectsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E198A9AA16FFE52D00721DC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E198A9BB16FFE52E00721DC3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E198A9AB16FFE52D00721DC3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E198A99816FFE52D00721DC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E198A9D716FFE99100721DC3 /* Iterator.m in Sources */,
+				E198A9DA16FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.m in Sources */,
+				E198A9E31700006F00721DC3 /* WhereIterator.m in Sources */,
+				E198A9E9170002A500721DC3 /* PredicateIterator.m in Sources */,
+				E198A9F217000E7900721DC3 /* CountIterator.m in Sources */,
+				E198A9F517000EE400721DC3 /* SkipIterator.m in Sources */,
+				E198A9FB170016EC00721DC3 /* TakeIterator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E198A9A816FFE52D00721DC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E198A9DD16FFFA0400721DC3 /* RangeIterator.m in Sources */,
+				E198A9E016FFFC4000721DC3 /* RangeIteratorTests.m in Sources */,
+				E198A9EC170003DC00721DC3 /* PredicateIteratorTests.m in Sources */,
+				E198A9F817000F4900721DC3 /* CountIteratorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E198A9B416FFE52D00721DC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E198A99B16FFE52D00721DC3 /* Linq2NSObjects */;
+			targetProxy = E198A9B316FFE52D00721DC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E198A9B916FFE52E00721DC3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E198A9BA16FFE52E00721DC3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E198A9BF16FFE52E00721DC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E198A9C016FFE52E00721DC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E198A9C216FFE52E00721DC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Linq2NSObjects.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Linq2NSObjects/Linq2NSObjects-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E198A9C316FFE52E00721DC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Linq2NSObjects.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Linq2NSObjects/Linq2NSObjects-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E198A9C516FFE52E00721DC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Linq2NSObjects/Linq2NSObjects-Prefix.pch";
+				INFOPLIST_FILE = "Linq2NSObjectsTests/Linq2NSObjectsTests-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E198A9C616FFE52E00721DC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Linq2NSObjects/Linq2NSObjects-Prefix.pch";
+				INFOPLIST_FILE = "Linq2NSObjectsTests/Linq2NSObjectsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E198A99716FFE52D00721DC3 /* Build configuration list for PBXProject "Linq2NSObjects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E198A9BF16FFE52E00721DC3 /* Debug */,
+				E198A9C016FFE52E00721DC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E198A9C116FFE52E00721DC3 /* Build configuration list for PBXNativeTarget "Linq2NSObjects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E198A9C216FFE52E00721DC3 /* Debug */,
+				E198A9C316FFE52E00721DC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E198A9C416FFE52E00721DC3 /* Build configuration list for PBXNativeTarget "Linq2NSObjectsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E198A9C516FFE52E00721DC3 /* Debug */,
+				E198A9C616FFE52E00721DC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E198A99416FFE52D00721DC3 /* Project object */;
+}
