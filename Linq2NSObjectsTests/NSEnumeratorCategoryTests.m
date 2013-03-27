@@ -128,4 +128,21 @@
     }
 }
 
+-(void)testContains
+{
+    NSString *searchValue = [self.sampleArray objectAtIndex:1];
+    STAssertTrue([self.sampleArray.objectEnumerator contains:searchValue], @"Contains category method failed to find valid value.");
+    STAssertFalse([self.sampleArray.objectEnumerator contains:[NSNumber numberWithInt:217]], @"Contains category method identified invalid value.");
+}
+
+-(void)testElementAt
+{
+    int index = 3;
+    NSString *expectedValue = [self.sampleArray objectAtIndex:index];
+    NSString *actualValue = [self.sampleArray.objectEnumerator elementAt:index];
+    
+    STAssertEquals(actualValue, expectedValue, @"ElementAt category method found incorrect result.");
+    STAssertNil([self.sampleArray.objectEnumerator elementAt:217], @"ElementAt should return nil if index is out of bounds.");
+}
+
 @end

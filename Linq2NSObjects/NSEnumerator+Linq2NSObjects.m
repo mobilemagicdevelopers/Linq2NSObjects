@@ -80,7 +80,8 @@
 
 -(id)first:(Predicate)predicate
 {
-    id result = [self nextObject];;
+    id result = [self nextObject];
+    
     while (result && !predicate(result))
         result = [self nextObject];
     
@@ -129,14 +130,16 @@
     return YES;
 }
 
+-(id)elementAt:(int)index
+{
+    return [[self skip:index] first];
+}
+
 -(BOOL)contains:(id)item
 {
-    id element;
-    while (element = [self nextObject])
-        if ([element isEqual:item])
-            return YES;
-    
-    return NO;
+    return [self any:^BOOL(id element) {
+        return element == item;
+    }];
 }
 
 -(id)aggregateWithSeed:(id)seed andAccumulator:(Accumulator)accumulator

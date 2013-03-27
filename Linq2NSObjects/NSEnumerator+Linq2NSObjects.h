@@ -39,6 +39,8 @@
 
 -(BOOL)all:(Predicate)predicate;
 
+-(id)elementAt:(int)index;
+
 -(BOOL)contains:(id)item;
 
 -(id)aggregateWithSeed:(id)seed andAccumulator:(Accumulator)accumulator;
