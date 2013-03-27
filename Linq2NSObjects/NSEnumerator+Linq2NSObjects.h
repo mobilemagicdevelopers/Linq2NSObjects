@@ -16,6 +16,8 @@
 -(Iterator *)skipWhile:(Predicate)predicate;
 -(Iterator *)takeWhile:(Predicate)predicate;
 
+-(Iterator *)ofType:(Class)type;
+
 -(Iterator *)skip:(int)count;
 -(Iterator *)take:(int)count;
 

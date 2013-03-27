@@ -32,6 +32,14 @@
     return [[TakeWhileIterator alloc] initWithSource:self andPredicate:predicate];
 }
 
+-(Iterator *)ofType:(Class)type
+{
+    return [self where:^BOOL(id item) {
+        return [[item class] isSubclassOfClass:type];
+    }];
+}
+
+
 -(Iterator *)skip:(int)count
 {
     return [[SkipIterator alloc] initWithSource:self andCount:count];
@@ -137,9 +145,8 @@
 
 -(NSDictionary *)toDictionaryWithKeySelector:(KeyObjectSelector)keySelector
 {
-    return [self toDictionaryWithKeySelector:keySelector andValueSelector:^id(id item) {
-        return item;
-    }];
+    static Selector identitySelector = ^id(id item) { return item; };
+    return [self toDictionaryWithKeySelector:keySelector andValueSelector:identitySelector];
 }
 
 -(NSDictionary *)toDictionaryWithKeySelector:(KeyObjectSelector)keySelector andValueSelector:(Selector)valueSelector
@@ -154,12 +161,7 @@
 
 -(NSArray *)toArray
 {
-    NSMutableArray *result = [NSMutableArray array];
-    
-    for (id item in self)
-        [result addObject:item];
-    
-    return result;
+    return self.allObjects;
 }
 
 @end

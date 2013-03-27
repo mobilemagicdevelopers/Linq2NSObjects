@@ -42,4 +42,16 @@
     STAssertEquals(concat.count, (uint)(count + count2), @"ConcatIterator return invalid length.");
 }
 
+-(void)testOfType
+{
+    NSArray *testArray = @[@"Piper", [NSNumber numberWithInt:217], [NSNumber numberWithInt:406]];
+    NSArray *strings = [testArray.objectEnumerator ofType:[NSString class]].allObjects;
+    NSArray *numbers = [testArray.objectEnumerator ofType:[NSNumber class]].allObjects;
+    NSArray *rangeIterators = [testArray.objectEnumerator ofType:[RangeIterator class]].allObjects;
+    
+    STAssertEquals(0x1U, strings.count, @"OfType category method appears to have returned an invalid count of strings.");
+    STAssertEquals(0x2U, numbers.count, @"OfType category method failed to return valid count of ints.");
+    STAssertEquals(0x0U, rangeIterators.count, @"OfType category method failed to return valid count of RangeIterators.");
+}
+
 @end
