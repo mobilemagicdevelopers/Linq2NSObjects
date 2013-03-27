@@ -27,6 +27,9 @@
 -(id)first;
 -(id)first:(Predicate)predicate;
 
+-(id)last;
+-(id)last:(Predicate)predicate;
+
 -(BOOL)any;
 -(BOOL)any:(Predicate)predicate;
 

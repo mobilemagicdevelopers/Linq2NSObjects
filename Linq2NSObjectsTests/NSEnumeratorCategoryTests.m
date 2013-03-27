@@ -35,6 +35,20 @@
     }];
     
     STAssertEquals(valueFound, searchValue, @"First category method with predicate failed.");
+    STAssertEquals([self.sampleArray.objectEnumerator first], [self.sampleArray objectAtIndex:0], @"First category method failed.");
+}
+
+-(void)testLast
+{
+    STAssertEquals([self.sampleArray.objectEnumerator first], [self.sampleArray objectAtIndex:0], @"First category method failed.");
+    
+    NSString *searchValue = self.sampleArray.lastObject;
+    NSString *valueFound = [self.sampleArray.objectEnumerator last:^BOOL(id element) {
+        return element == searchValue;
+    }];
+    
+    STAssertEquals(valueFound, searchValue, @"Last category method with predicate failed.");
+    STAssertEquals([self.sampleArray.objectEnumerator last], searchValue, @"Last category method failed.");
 }
 
 -(void)testAggregate

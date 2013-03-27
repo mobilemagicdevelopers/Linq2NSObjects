@@ -74,6 +74,29 @@
     return result;
 }
 
+-(id)last
+{
+    id result, currentItem;
+
+    while (currentItem = [self nextObject])
+        result = currentItem;
+
+    return result;
+}
+
+-(id)last:(Predicate)predicate
+{
+    id result, currentItem;
+    
+    while (currentItem = [self nextObject])
+    {
+        if (predicate(currentItem))
+            result = currentItem;
+    }
+    
+    return result;
+}
+
 -(BOOL)any
 {
     return [self first] != nil;
