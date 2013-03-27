@@ -31,6 +31,8 @@
 		E198AA141700D19F00721DC3 /* SelectorIteratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA131700D19F00721DC3 /* SelectorIteratorTests.m */; };
 		E198AA171700D98F00721DC3 /* SkipWhileIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA161700D98F00721DC3 /* SkipWhileIterator.m */; };
 		E198AA1A1700D9EC00721DC3 /* TakeWhileIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA191700D9EC00721DC3 /* TakeWhileIterator.m */; };
+		E198AA201702B47100721DC3 /* ConcatIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA1F1702B47100721DC3 /* ConcatIterator.m */; };
+		E198AA231702B55900721DC3 /* OtherIteratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA221702B55900721DC3 /* OtherIteratorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,10 @@
 		E198AA161700D98F00721DC3 /* SkipWhileIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkipWhileIterator.m; sourceTree = "<group>"; };
 		E198AA181700D9EC00721DC3 /* TakeWhileIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeWhileIterator.h; sourceTree = "<group>"; };
 		E198AA191700D9EC00721DC3 /* TakeWhileIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeWhileIterator.m; sourceTree = "<group>"; };
+		E198AA1E1702B47100721DC3 /* ConcatIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcatIterator.h; sourceTree = "<group>"; };
+		E198AA1F1702B47100721DC3 /* ConcatIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcatIterator.m; sourceTree = "<group>"; };
+		E198AA211702B55900721DC3 /* OtherIteratorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherIteratorTests.h; sourceTree = "<group>"; };
+		E198AA221702B55900721DC3 /* OtherIteratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherIteratorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +198,8 @@
 				E198A9FD1700BF4700721DC3 /* NSEnumeratorCategoryTests.m */,
 				E198AA121700D19F00721DC3 /* SelectorIteratorTests.h */,
 				E198AA131700D19F00721DC3 /* SelectorIteratorTests.m */,
+				E198AA211702B55900721DC3 /* OtherIteratorTests.h */,
+				E198AA221702B55900721DC3 /* OtherIteratorTests.m */,
 			);
 			path = Linq2NSObjectsTests;
 			sourceTree = "<group>";
@@ -221,6 +229,8 @@
 				E198AA161700D98F00721DC3 /* SkipWhileIterator.m */,
 				E198AA181700D9EC00721DC3 /* TakeWhileIterator.h */,
 				E198AA191700D9EC00721DC3 /* TakeWhileIterator.m */,
+				E198AA1E1702B47100721DC3 /* ConcatIterator.h */,
+				E198AA1F1702B47100721DC3 /* ConcatIterator.m */,
 			);
 			path = Iterators;
 			sourceTree = "<group>";
@@ -349,6 +359,7 @@
 				E198AA111700D0CD00721DC3 /* SelectIterator.m in Sources */,
 				E198AA171700D98F00721DC3 /* SkipWhileIterator.m in Sources */,
 				E198AA1A1700D9EC00721DC3 /* TakeWhileIterator.m in Sources */,
+				E198AA201702B47100721DC3 /* ConcatIterator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +373,7 @@
 				E198A9F817000F4900721DC3 /* CountIteratorTests.m in Sources */,
 				E198A9FE1700BF4700721DC3 /* NSEnumeratorCategoryTests.m in Sources */,
 				E198AA141700D19F00721DC3 /* SelectorIteratorTests.m in Sources */,
+				E198AA231702B55900721DC3 /* OtherIteratorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

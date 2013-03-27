@@ -11,3 +11,4 @@
 typedef BOOL (^Predicate)(id item);
 typedef id (^Accumulator)(id aggregate, id item);
 typedef id (^Selector)(id item);
+typedef id<NSCopying> (^KeyObjectSelector)(id item);

@@ -21,6 +21,8 @@
 
 -(Iterator *)select:(Selector)selector;
 
+-(Iterator *)concat:(NSEnumerator *)enumerator, ... NS_REQUIRES_NIL_TERMINATION;
+
 #pragma mark Selections
 -(id)first;
 -(id)first:(Predicate)predicate;
@@ -32,5 +34,7 @@
 
 -(id)aggregateWithSeed:(id)seed andAccumulator:(Accumulator)accumulator;
 
--(NSDictionary *)toDictionaryWithKeySelector:(Selector)keySelector andValueSelector:(Selector)valueSelector;
+-(NSDictionary *)toDictionaryWithKeySelector:(KeyObjectSelector)keySelector andValueSelector:(Selector)valueSelector;
+-(NSDictionary *)toDictionaryWithKeySelector:(KeyObjectSelector)keySelector;
+-(NSArray *)toArray;
 @end

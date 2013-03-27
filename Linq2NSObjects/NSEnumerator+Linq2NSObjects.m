@@ -13,6 +13,7 @@
 #import "SelectIterator.h"
 #import "SkipWhileIterator.h"
 #import "TakeWhileIterator.h"
+#import "ConcatIterator.h"
 
 @implementation NSEnumerator (Linq2NSObjects)
 
@@ -44,6 +45,19 @@
 -(Iterator *)select:(Selector)selector
 {
     return [[SelectIterator alloc] initWithSource:self andSelector:selector];
+}
+
+-(Iterator *)concat:(NSEnumerator *)enumerator, ...
+{
+    NSMutableArray *enumerators = [NSMutableArray array];
+    
+    va_list args;
+    va_start(args, enumerator);
+    
+    for (NSEnumerator *item = enumerator; item != nil; item = va_arg(args, NSEnumerator*))
+        [enumerators addObject:item];
+    
+    return [[ConcatIterator alloc] initWithSource:self andEnumerators:enumerators];
 }
 
 -(id)first
@@ -89,14 +103,31 @@
     return result;
 }
 
--(NSDictionary *)toDictionaryWithKeySelector:(Selector)keySelector andValueSelector:(Selector)valueSelector
+-(NSDictionary *)toDictionaryWithKeySelector:(KeyObjectSelector)keySelector
+{
+    return [self toDictionaryWithKeySelector:keySelector andValueSelector:^id(id item) {
+        return item;
+    }];
+}
+
+-(NSDictionary *)toDictionaryWithKeySelector:(KeyObjectSelector)keySelector andValueSelector:(Selector)valueSelector
 {
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
     
     for (id item in self)
         [result setObject:valueSelector(item) forKey:keySelector(item)];
     
-    return result.copy;
+    return result;
+}
+
+-(NSArray *)toArray
+{
+    NSMutableArray *result = [NSMutableArray array];
+    
+    for (id item in self)
+        [result addObject:item];
+    
+    return result;
 }
 
 @end

@@ -60,7 +60,7 @@
     int start = 2, count = 17;
     id rangeIterator = [RangeIterator withStart:start andCount:count];
     
-    Selector keySelector = ^NSNumber *(NSNumber *item){ return item; };
+    KeyObjectSelector keySelector = ^NSNumber *(NSNumber *item){ return item; };
     Selector valueSelector = ^NSString *(NSNumber *item){ return [NSString stringWithFormat:@"%i", item.integerValue]; };
     
     NSDictionary *dictionary = [rangeIterator toDictionaryWithKeySelector:keySelector andValueSelector:valueSelector];
@@ -72,6 +72,23 @@
     }
     
     STAssertEquals(dictionary.count, (uint)count, @"ToDictionary has unexpected length.");
+}
+
+-(void)testToArray
+{
+    int start = 2, count = 17;
+    id rangeIterator = [RangeIterator withStart:start andCount:count];
+
+    NSArray *array = [[rangeIterator select:^NSString *(NSNumber *item) {
+        return [NSString stringWithFormat:@"%i", item.integerValue];
+    }] toArray];
+    
+    for (int i = 0; i < count; i++)
+    {
+        NSString *expected = [NSString stringWithFormat:@"%i", i + start];
+        NSString *actual = [array objectAtIndex:i];
+        STAssertTrue([actual isEqualToString:expected], @"ToArray failed to produce valid array.");
+    }
 }
 
 @end
