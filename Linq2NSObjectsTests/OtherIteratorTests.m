@@ -49,9 +49,9 @@
     NSArray *numbers = [testArray.objectEnumerator ofType:[NSNumber class]].allObjects;
     NSArray *rangeIterators = [testArray.objectEnumerator ofType:[RangeIterator class]].allObjects;
     
-    STAssertEquals(0x1U, strings.count, @"OfType category method appears to have returned an invalid count of strings.");
-    STAssertEquals(0x2U, numbers.count, @"OfType category method failed to return valid count of ints.");
-    STAssertEquals(0x0U, rangeIterators.count, @"OfType category method failed to return valid count of RangeIterators.");
+    STAssertEquals(1U, strings.count, @"OfType category method appears to have returned an invalid count of strings.");
+    STAssertEquals(2U, numbers.count, @"OfType category method failed to return valid count of ints.");
+    STAssertEquals(0U, rangeIterators.count, @"OfType category method failed to return valid count of RangeIterators.");
 }
 
 @end
