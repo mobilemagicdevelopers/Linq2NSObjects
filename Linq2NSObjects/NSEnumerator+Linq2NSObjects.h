@@ -33,6 +33,8 @@
 -(BOOL)any;
 -(BOOL)any:(Predicate)predicate;
 
+-(BOOL)all:(Predicate)predicate;
+
 -(BOOL)contains:(id)item;
 
 -(id)aggregateWithSeed:(id)seed andAccumulator:(Accumulator)accumulator;

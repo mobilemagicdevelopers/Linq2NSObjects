@@ -107,14 +107,23 @@
     return [self first:predicate] != nil;
 }
 
+-(BOOL)all:(Predicate)predicate
+{
+    for (id result = [self nextObject]; result; result = [self nextObject])
+        if (!predicate(result))
+            return NO;
+    
+    return YES;
+}
+
 -(BOOL)contains:(id)item
 {
     id element;
     while (element = [self nextObject])
         if ([element isEqual:item])
-            return true;
+            return YES;
     
-    return false;
+    return NO;
 }
 
 -(id)aggregateWithSeed:(id)seed andAccumulator:(Accumulator)accumulator

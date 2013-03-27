@@ -51,6 +51,29 @@
     STAssertEquals([self.sampleArray.objectEnumerator last], searchValue, @"Last category method failed.");
 }
 
+-(void)testAny
+{
+    STAssertTrue([self.sampleArray.objectEnumerator any], @"Any category method returned NO when there were any.");
+    STAssertFalse([[[NSArray array] objectEnumerator] any], @"Any category method returned YES when there weren't any.");
+
+    NSString *searchValue = [self.sampleArray objectAtIndex:1];
+    Predicate findSearchValue = ^BOOL(id item) { return item == searchValue; };
+    
+    STAssertTrue([self.sampleArray.objectEnumerator any:findSearchValue], @"Any category method with predicate returned NO when there were any.");
+    STAssertFalse([[[NSArray array] objectEnumerator] any:findSearchValue], @"Any category method with predicate returned YES when there weren't any.");
+}
+
+-(void)testAll
+{
+    STAssertFalse([self.sampleArray.objectEnumerator all:^BOOL(id item) {
+        return NO;
+    }], @"All category method returned YES when all items did not match predicate.");
+    
+    STAssertTrue([self.sampleArray.objectEnumerator all:^BOOL(id item) {
+        return YES;
+    }], @"All category method returned NO when all items did match predicate.");
+}
+
 -(void)testAggregate
 {
     int start = 2, count = 17;
