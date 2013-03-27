@@ -23,6 +23,8 @@
 
 -(Iterator *)select:(Selector)selector;
 
+-(Iterator *)distinct;
+
 -(Iterator *)concat:(NSEnumerator *)enumerator, ... NS_REQUIRES_NIL_TERMINATION;
 
 #pragma mark Selections

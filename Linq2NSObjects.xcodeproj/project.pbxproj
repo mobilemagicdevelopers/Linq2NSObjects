@@ -33,6 +33,7 @@
 		E198AA1A1700D9EC00721DC3 /* TakeWhileIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA191700D9EC00721DC3 /* TakeWhileIterator.m */; };
 		E198AA201702B47100721DC3 /* ConcatIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA1F1702B47100721DC3 /* ConcatIterator.m */; };
 		E198AA231702B55900721DC3 /* OtherIteratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA221702B55900721DC3 /* OtherIteratorTests.m */; };
+		E198AA261703AD5500721DC3 /* DistinctIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA251703AD5500721DC3 /* DistinctIterator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		E198AA1F1702B47100721DC3 /* ConcatIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcatIterator.m; sourceTree = "<group>"; };
 		E198AA211702B55900721DC3 /* OtherIteratorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherIteratorTests.h; sourceTree = "<group>"; };
 		E198AA221702B55900721DC3 /* OtherIteratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherIteratorTests.m; sourceTree = "<group>"; };
+		E198AA241703AD5500721DC3 /* DistinctIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistinctIterator.h; sourceTree = "<group>"; };
+		E198AA251703AD5500721DC3 /* DistinctIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistinctIterator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +234,8 @@
 				E198AA191700D9EC00721DC3 /* TakeWhileIterator.m */,
 				E198AA1E1702B47100721DC3 /* ConcatIterator.h */,
 				E198AA1F1702B47100721DC3 /* ConcatIterator.m */,
+				E198AA241703AD5500721DC3 /* DistinctIterator.h */,
+				E198AA251703AD5500721DC3 /* DistinctIterator.m */,
 			);
 			path = Iterators;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				E198AA171700D98F00721DC3 /* SkipWhileIterator.m in Sources */,
 				E198AA1A1700D9EC00721DC3 /* TakeWhileIterator.m in Sources */,
 				E198AA201702B47100721DC3 /* ConcatIterator.m in Sources */,
+				E198AA261703AD5500721DC3 /* DistinctIterator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

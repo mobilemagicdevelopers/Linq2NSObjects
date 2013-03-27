@@ -54,4 +54,16 @@
     STAssertEquals(0U, rangeIterators.count, @"OfType category method failed to return valid count of RangeIterators.");
 }
 
+-(void)testDistinct
+{
+    NSArray *testArray = @[@"Piper", @"Lauren", @"Piper"];
+    NSArray *expectedArray = @[@"Piper", @"Lauren"];
+              
+    id distinct = [testArray.objectEnumerator distinct];
+    
+    int i = 0;
+    for (NSString *name in distinct)
+        STAssertEquals(name, [expectedArray objectAtIndex:i++], @"DistictIterator failed to return distinct values.");
+}
+
 @end

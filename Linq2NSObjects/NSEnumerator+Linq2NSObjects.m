@@ -14,6 +14,7 @@
 #import "SkipWhileIterator.h"
 #import "TakeWhileIterator.h"
 #import "ConcatIterator.h"
+#import "DistinctIterator.h"
 
 @implementation NSEnumerator (Linq2NSObjects)
 
@@ -39,7 +40,6 @@
     }];
 }
 
-
 -(Iterator *)skip:(int)count
 {
     return [[SkipIterator alloc] initWithSource:self andCount:count];
@@ -53,6 +53,11 @@
 -(Iterator *)select:(Selector)selector
 {
     return [[SelectIterator alloc] initWithSource:self andSelector:selector];
+}
+
+-(Iterator *)distinct
+{
+    return [[DistinctIterator alloc] initWithSource:self];
 }
 
 -(Iterator *)concat:(NSEnumerator *)enumerator, ...
