@@ -10,7 +10,6 @@
 		E198A9A016FFE52D00721DC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E198A99F16FFE52D00721DC3 /* Foundation.framework */; };
 		E198A9A516FFE52D00721DC3 /* Linq2NSObjects.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E198A9A416FFE52D00721DC3 /* Linq2NSObjects.h */; };
 		E198A9AF16FFE52D00721DC3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E198A9AE16FFE52D00721DC3 /* SenTestingKit.framework */; };
-		E198A9B116FFE52D00721DC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E198A9B016FFE52D00721DC3 /* UIKit.framework */; };
 		E198A9B216FFE52D00721DC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E198A99F16FFE52D00721DC3 /* Foundation.framework */; };
 		E198A9B516FFE52D00721DC3 /* libLinq2NSObjects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E198A99C16FFE52D00721DC3 /* libLinq2NSObjects.a */; };
 		E198A9BB16FFE52E00721DC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E198A9B916FFE52E00721DC3 /* InfoPlist.strings */; };
@@ -34,6 +33,9 @@
 		E198AA201702B47100721DC3 /* ConcatIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA1F1702B47100721DC3 /* ConcatIterator.m */; };
 		E198AA231702B55900721DC3 /* OtherIteratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA221702B55900721DC3 /* OtherIteratorTests.m */; };
 		E198AA261703AD5500721DC3 /* DistinctIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA251703AD5500721DC3 /* DistinctIterator.m */; };
+		E198AA2C1703BC6500721DC3 /* NSEnumerator+Linq2NSObjects.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E198A9D816FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.h */; };
+		E198AA2E1703BCCF00721DC3 /* Iterator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E198AA051700D05700721DC3 /* Iterator.h */; };
+		E198AA301703BD1900721DC3 /* Linq2NSObjectsTypes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E198A9E41700020000721DC3 /* Linq2NSObjectsTypes.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				E198AA301703BD1900721DC3 /* Linq2NSObjectsTypes.h in CopyFiles */,
+				E198AA2E1703BCCF00721DC3 /* Iterator.h in CopyFiles */,
+				E198AA2C1703BC6500721DC3 /* NSEnumerator+Linq2NSObjects.h in CopyFiles */,
 				E198A9A516FFE52D00721DC3 /* Linq2NSObjects.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +71,6 @@
 		E198A9A416FFE52D00721DC3 /* Linq2NSObjects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Linq2NSObjects.h; sourceTree = "<group>"; };
 		E198A9AD16FFE52D00721DC3 /* Linq2NSObjectsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Linq2NSObjectsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E198A9AE16FFE52D00721DC3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E198A9B016FFE52D00721DC3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E198A9B816FFE52E00721DC3 /* Linq2NSObjectsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Linq2NSObjectsTests-Info.plist"; sourceTree = "<group>"; };
 		E198A9BA16FFE52E00721DC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E198A9D816FFE9D300721DC3 /* NSEnumerator+Linq2NSObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+Linq2NSObjects.h"; sourceTree = "<group>"; };
@@ -126,7 +130,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E198A9AF16FFE52D00721DC3 /* SenTestingKit.framework in Frameworks */,
-				E198A9B116FFE52D00721DC3 /* UIKit.framework in Frameworks */,
 				E198A9B216FFE52D00721DC3 /* Foundation.framework in Frameworks */,
 				E198A9B516FFE52D00721DC3 /* libLinq2NSObjects.a in Frameworks */,
 			);
@@ -159,7 +162,6 @@
 			children = (
 				E198A99F16FFE52D00721DC3 /* Foundation.framework */,
 				E198A9AE16FFE52D00721DC3 /* SenTestingKit.framework */,
-				E198A9B016FFE52D00721DC3 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

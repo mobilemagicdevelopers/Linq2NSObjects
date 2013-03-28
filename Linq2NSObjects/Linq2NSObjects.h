@@ -8,3 +8,4 @@
 
 #import <Foundation/Foundation.h>
 #import "NSEnumerator+Linq2NSObjects.h"
+#import "Linq2NSObjectsTypes.h"
