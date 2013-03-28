@@ -92,6 +92,22 @@
     STAssertEquals(actualValue, expectedValue, @"Aggregate category method failed.");
 }
 
+-(void)testAggregateStrings
+{
+    static NSString *pattern = @"%@, %@";
+    NSEnumerator *enumerator = self.sampleArray.objectEnumerator;
+    
+    NSString *family = [enumerator aggregateWithSeed:enumerator.nextObject andAccumulator:^id(NSString *aggregate, NSString *item) {
+        return [NSString stringWithFormat:pattern, aggregate, item];
+    }];
+
+    NSString *expectedValue = [self.sampleArray objectAtIndex:0];
+    for (int i = 1; i < self.sampleArray.count; i++)
+        expectedValue = [NSString stringWithFormat:pattern, expectedValue, [self.sampleArray objectAtIndex:i]];
+    
+    STAssertTrue([expectedValue isEqualToString:family], @"Aggregate category method failed for strings.");
+}
+
 -(void)testToDictionary
 {
     int start = 2, count = 17;
