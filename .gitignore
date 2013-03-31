@@ -14,4 +14,6 @@ profile
 *.moved-aside
 DerivedData
 .idea/
-*.hmap
+*.hmapbuild
+build
+fat_binary
