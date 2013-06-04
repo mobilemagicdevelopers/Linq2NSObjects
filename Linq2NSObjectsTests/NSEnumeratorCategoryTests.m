@@ -103,7 +103,7 @@
 
     NSString *expectedValue = [self.sampleArray objectAtIndex:0];
     for (int i = 1; i < self.sampleArray.count; i++)
-        expectedValue = [NSString stringWithFormat:pattern, expectedValue, [self.sampleArray objectAtIndex:i]];
+        expectedValue = [NSString stringWithFormat:@"%@, %@", expectedValue, [self.sampleArray objectAtIndex:i]];
     
     STAssertTrue([expectedValue isEqualToString:family], @"Aggregate category method failed for strings.");
 }
