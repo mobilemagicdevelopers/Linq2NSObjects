@@ -17,3 +17,4 @@ DerivedData
 *.hmapbuild
 build
 fat_binary
+*.xccheckout
